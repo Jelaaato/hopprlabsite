@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Web";
+    Layout = null;
+}
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@ViewBag.Title</title>
+<link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="~/favicon.ico" type="image/x-icon" />
+<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/modernizr-2.6.2.js"></script>
+<script src="~/Scripts/scrollreveal.min.js"></script>
+<link href="~/Content/animate.css" rel="stylesheet" />
+<link href="~/Content/hover.css" rel="stylesheet" />
+
+<div class="web-header"></div>
+
+<nav id="nav" class="navbar customNav" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="glyphicon glyphicon-chevron-down collapseicon"></span>
+            </button>
+            <a href="@Url.Action("Index","Home")"><img src="~/Images/hopprlab_logo.png" class="navbar-brand" /></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right nav-padding-top">
+                <li><a href="@Url.Action("Index","Web")" class="pointer nav-title">WEB</a></li>
+                <li><a href="@Url.Action("Index","Mobile")" class="pointer nav-title">MOBILE</a></li>
+                <li><a href="@Url.Action("Index","Analytics")" class="pointer nav-title">ANALYTICS</a></li>
+                <li><a href="@Url.Action("Index","IOT")" class="pointer nav-title">IoT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row" style="margin-top:10% !important;">
+        <br /><br /><br /><br /><br /><br />
+        <center>
+            <div class="col-lg-6">
+                <br />
+                <img src="~/Images/CompressedScreenshots/eventmanagerweb.png" class="web-ss-size animated fadeIn" />
+            </div>
+            <br /><br /><br /><br />
+            <div class="col-lg-6">
+                <div class="mobiledescription animated fadeIn">
+                    <span class="title">Event Manager</span>
+                    <br />
+                    <p class="description">
+                         Create, organize and manage your events<br />
+                         anytime and anywhere over the internet.<br />
+                         Upload the list of your expected attendees<br />
+                         in no time and generate report to track the<br />
+                         registration from our mobile application.<br />
+                        <br />
+                        @*<button onclick="location.href='https://hopprlab.com/eventsmanager'" type="submit" class="call-to-action-button hvr-ripple-out" formtarget="_blank">Explore</button>*@
+                        <a href="https://hopprlab.com/eventsmanager" class="removeunderline call-to-action-button hvr-ripple-out" target="_blank">Explore</a>
+                    </p>
+                </div>
+            </div>
+        </center>
+    </div>
+
+    <div class="row" style="margin-top:5% !important;">
+        <br /><br /><br /><br /><br /><br />
+        <center>
+            <div class="col-lg-6">
+                <img src="~/Images/CompressedScreenshots/ahmcportal.png" class="web-ss1-size animated fadeIn" />
+            </div>
+            <br />
+            <div class="col-lg-6">
+                <div class="mobiledescription animated fadeIn">
+                    <br /><br /><br />
+                    <span class="title">AHMC Portal</span>
+                    <br /><br />
+                    <p class="description">
+                         The official portal of Asian Hospital and Medical Center.<br />
+                         This allows acess to your health records and more over the internet.<br />
+                        <br />
+                        @*<button onclick="location.href='https://hopprlab.com/ahmcportal'" type="button" class="call-to-action-button hvr-ripple-out" formtarget="_blank">Visit</button>*@
+                        <a href="https://hopprlab.com/ahmcportal" class="removeunderline call-to-action-button hvr-ripple-out" target="_blank">Explore</a>
+                    </p>
+                </div>
+            </div>
+        </center>
+    </div>
+</div>
+
+<footer>
+    <hr />
+    <center>
+        <span>Copyright 2017 Asian Hospital and Medical Center. All rights reserved.</span>
+    </center>
+    <br />
+</footer>

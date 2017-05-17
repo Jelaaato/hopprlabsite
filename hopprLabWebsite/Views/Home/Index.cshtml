@@ -1,0 +1,229 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "hopprLab";
+}
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/scrollreveal.min.js"></script>
+    <link href="~/Content/hover.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main-header-wrapper">
+        <div class="main-header"></div>
+    </div>
+    <nav id="nav" class="navbar customNav navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="glyphicon glyphicon-chevron-down collapseicon" style="padding-top:10px !important;"></span>
+                </button>
+                <a href="@Url.Action("Index","Home")"><img src="~/Images/hopprlab_logo.png" class="navbar-brand" /></a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right nav-padding-top">
+                    <li><a href="#web" class="pointer nav-title">WEB</a></li>
+                    <li><a href="#mobile" class="pointer nav-title">MOBILE</a></li>
+                    <li><a href="#analytics" class="pointer nav-title">ANALYTICS</a></li>
+                    <li><a href="#iot" class="pointer nav-title">IoT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div id="web">
+            <div class="row centerVertically">
+                <center>
+                    <div class="col-lg-6">
+                        <div class="webicon">
+                            <img src="~/Images/web_icon.png" class="icon-size" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="webdescription breakingspace">
+                            <span class="title">WEB</span>
+                            <br /><br />
+                            <p class="description">
+                                 Offers wide range of timely applications<br />
+                                 deployed and maintained in the cloud<br />
+                                 that are accessible with your browser<br />
+                                 anywhere from desktop to<br />
+                                 mobile screens.<br />
+                                <br />
+                                <button class="call-to-action-button hvr-ripple-out" type="button" onclick="location.href='@Url.Action("Index", "Web")'">Explore<span class="glyphicon glyphicon-ar"></span></button>
+                            </p>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+        <div id="mobile">
+            <div class="row centerVertically">
+                <center>
+                    <div class="col-lg-6">
+                        <div class="mobileicon">
+                            <img src="~/Images/mobile_icon.png" class="icon-size" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mobiledescription breakingspace">
+                            <span class="title">MOBILE</span>
+                            <br /><br />
+                            <p class="description">
+                                 Engage customers with simpler<br />
+                                 and more efficient applications that will<br />
+                                 provide similar services to those accessed on the web<br />
+                                 while taking advantage of the unique features<br />
+                                 a mobile device can offer.<br />
+                                <br />
+                                <button class="call-to-action-button hvr-ripple-out" type="button" onclick="location.href='@Url.Action("Index", "Mobile")'">Explore</button>
+                            </p>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+        <div id="analytics">
+            <div class="row centerVertically">
+                <center>
+                    <div class="col-lg-6">
+                        <div class="analyticsicon">
+                            <img src="~/Images/analytics_icon.png" class="icon-size" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="analyticsdescription breakingspace">
+                            <span class="title">ANALYTICS</span>
+                            <br /><br />
+                            <p class="description">
+                                Organize, visualize and analyze data to meet<br />
+                                dashboards, reports and share insights<br />
+                                that will measure your organization's<br />
+                                performance.<br />
+                                <br />
+                                <button class="call-to-action-button hvr-ripple-out" type="button" onclick="location.href='@Url.Action("Index", "Analytics")'">Explore</button>
+                            </p>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+        <div id="iot">
+            <div class="row centerVertically">
+                <center>
+                    <div class="col-lg-6">
+                        <div class="ioticon">
+                            <img src="~/Images/iot_icon.png" class="icon-size" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="iotdescription breakingspace">
+                            <span class="title">IoT</span>
+                            <br /><br />
+                            <p class="description">
+                                System of physical things embedded with sensors,<br />
+                                software, electronics and connectivity<br />
+                                to allow better performance by exchanging data <br />
+                                between interconnected devices.<br />
+                                <br />
+                                <button class="call-to-action-button hvr-ripple-out" type="button" onclick="location.href='@Url.Action("Index", "IOT")'">Explore</button>
+                            </p>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="backtotop" data-toggle="tooltip" data-placement="top" title="Back to Top"></a>
+
+    <footer>
+        <hr />
+            <center>
+                <span>Copyright 2017 Asian Hospital and Medical Center. All rights reserved.</span>
+            </center>
+        <br />
+    </footer>
+
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+    $("#nav ul li a[href^='#']").on('click', function (e) {
+        e.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 300, function () {
+            window.location.hash = hash;
+        })
+    });
+
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
+
+    window.sr = ScrollReveal();
+    sr.reveal('.webicon', { duration: 300, delay: 150});
+    sr.reveal('.mobileicon', { duration: 300, delay: 150});
+    sr.reveal('.analyticsicon', { duration: 300, delay: 150 });
+    sr.reveal('.ioticon', { duration: 300, delay: 150 });
+    sr.reveal('.webdescription', { duration: 300, delay: 150 });
+    sr.reveal('.mobiledescription', { duration: 300, delay: 150 });
+    sr.reveal('.analyticsdescription', { duration: 300, delay: 150 });
+    sr.reveal('.iotdescription', { duration: 300, delay: 150 });
+
+    $(document).ready(function() {
+        var scroll_start = 0;
+        var start_change = $('.customNav');
+        var offset = start_change.offset();
+        $(document).scroll(function() { 
+            scroll_start = $(this).scrollTop();
+            if(scroll_start > offset.top) {
+                $('.customNav').css('background-color', 'white');
+            } else {
+                $('.customNav').css('background-color', 'transparent');
+            }
+        });
+    });
+
+    jQuery(document).ready(function($){
+    var offset = 200,
+    offset_opacity = 1200,
+    scroll_top_duration = 700,
+    $back_to_top = $('.backtotop');
+
+    $(window).scroll(function(){
+        ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('btn-is-visible') : $back_to_top.removeClass('btn-is-visible btn-fade-out');
+        if( $(this).scrollTop() > offset_opacity ) { 
+            $back_to_top.addClass('btn-fade-out');
+        }
+    });
+
+    $back_to_top.on('click', function(event){
+        event.preventDefault();
+        $('body,html').animate({
+            scrollTop: 0 ,
+        }, scroll_top_duration
+        );
+    });
+    });
+    </script>
+</body>
+</html>
+

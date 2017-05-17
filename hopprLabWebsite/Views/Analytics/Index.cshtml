@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Analytics";
+    Layout = null;
+}
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@ViewBag.Title</title>
+<link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="~/favicon.ico" type="image/x-icon" />
+<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/modernizr-2.6.2.js"></script>
+<script src="~/Scripts/scrollreveal.min.js"></script>
+<link href="~/Content/animate.css" rel="stylesheet" />
+<link href="~/Content/hover.css" rel="stylesheet" />
+<div class="analytics-header"></div>
+
+<nav id="nav" class="navbar customNav" data-spy="affix" data-offset-top="10" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="glyphicon glyphicon-chevron-down collapseicon"></span>
+            </button>
+            <a href="@Url.Action("Index","Home")"><img src="~/Images/hopprlab_logo.png" class="navbar-brand" /></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right nav-padding-top">
+                <li><a href="@Url.Action("Index","Web")" class="pointer nav-title">WEB</a></li>
+                <li><a href="@Url.Action("Index","Mobile")" class="pointer nav-title">MOBILE</a></li>
+                <li><a href="@Url.Action("Index","Analytics")" class="pointer nav-title">ANALYTICS</a></li>
+                <li><a href="@Url.Action("Index","IOT")" class="pointer nav-title">IoT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row" style="margin-top:10% !important;">
+        <br /><br /><br /><br />
+        <center>
+            <div class="col-lg-6">
+                <img src="~/Images/CompressedScreenshots/powerbi.png" class="web-ss1-size animated fadeIn" />
+            </div>
+            <br />
+            <div class="col-lg-6">
+                <br /><br /><br /><br />
+                <div class="mobiledescription animated fadeIn">
+                    <span class="title">Power BI</span>
+                    <br />
+                    <p class="description">
+                        A suite of business analytics tools<br />
+                        to analyze data and share insights.<br />
+                        Monitor your business ad get answers quickly<br />
+                        with rich dashboards available on every device.<br />
+                        <br />
+                        @*<button type="button" class="call-to-action-button" formtarget="_blank">Visit</button>*@
+                        @*<img src="~/Images/CompressedScreenshots/ms_logo.png" width="150" height="70"/>
+                        <img src="~/Images/CompressedScreenshots/ms_powerbi_logo.png" width="150" height="70" />
+                        <br /><br />*@
+                        <a href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=871c010f-5e61-4fb1-83ac-98610a7e9110&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dfvTohmFr2nrAoxMQ5-Qf0QlFxitmMG4W8rep5gHMxm3eNtXvrXIZOmafEjCm9Iv13eRRHFDiOlBeGqL9-vNNgeK1htXLAtfkvLPdI_bW6ScUzsN5Twyk-S-36w1KMVX8JanRqQ&nonce=636234984397107296.MzA4M2FhMzctMGYxNi00NTA3LTk0NTctNTk4ZjQ0YjYwYTYwNzI4MDE1OGMtODdkMy00YTEyLWJiYWMtOTA2M2YzMzk0OGI3&site_id=500453&redirect_uri=https%3a%2f%2fapp.powerbi.com%2f%3fnoSignUpCheck%3d1&post_logout_redirect_uri=https%3a%2f%2fapp.powerbi.com%2f%3fnoSignUpCheck%3d1&resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&nux=1&msafed=0" class="removeunderline call-to-action-button hvr-ripple-out" target="_blank">Explore</a>
+                    </p>
+                </div>
+            </div>
+        </center>
+    </div>
+</div>
+

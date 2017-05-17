@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "IoT";
+    Layout = null;
+}
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@ViewBag.Title</title>
+<link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="~/favicon.ico" type="image/x-icon" />
+<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/modernizr-2.6.2.js"></script>
+<script src="~/Scripts/scrollreveal.min.js"></script>
+<link href="~/Content/animate.css" rel="stylesheet" />
+<link href="~/Content/hover.css" rel="stylesheet" />
+<div class="iot-header"></div>
+
+<nav id="nav" class="navbar customNav" data-spy="affix" data-offset-top="10" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="glyphicon glyphicon-chevron-down collapseicon"></span>
+            </button>
+            <a href="@Url.Action("Index","Home")"><img src="~/Images/hopprlab_logo.png" class="navbar-brand" /></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right nav-padding-top">
+                <li><a href="@Url.Action("Index","Web")" class="pointer nav-title">WEB</a></li>
+                <li><a href="@Url.Action("Index","Mobile")" class="pointer nav-title">MOBILE</a></li>
+                <li><a href="@Url.Action("Index","Analytics")" class="pointer nav-title">ANALYTICS</a></li>
+                <li><a href="@Url.Action("Index","IOT")" class="pointer nav-title">IoT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row" style="margin-top:10% !important;">
+        <br /><br /><br /><br /><br /><br />
+        <center>
+            <div class="col-lg-6">
+                <br />
+                <img src="~/Images/CompressedScreenshots/tempiot.png" class="web-ss1-size animated fadeIn" />
+            </div>
+            <br />
+            <div class="col-lg-6">
+                <br /><br /><br /><br />
+                <div class="mobiledescription animated fadeIn">
+                    <span class="title">Temperature and Humidty Monitor</span>
+                    <br />
+                    <p class="description">
+                         Data communications between Particle Photon,<br />
+                         Celsius Scale Thermometer and Percentage<br />
+                         Scale Humidity Meter that results to the<br />
+                         real-time monitoring of temperature and<br />
+                         humidity over the internet using<br />
+                         Ubidots IoT Platform.<br />
+                        <br />
+                        @*<img src="~/Images/CompressedScreenshots/aws_logo.jpg" width="150" height="70" />
+                        <img src="~/Images/CompressedScreenshots/ubidots_logo.png" width="150" height="70" />
+                        <img src="~/Images/CompressedScreenshots/particle_logo.png" width="160" height="60" />
+                        <br /><br />*@
+                        <a href="https://app.ubidots.com/ubi/public/getdashboard/page/AIs3ZDBzM3tQfisTDR4ae9GRR6A" class="removeunderline call-to-action-button hvr-ripple-out" target="_blank">Explore</a>
+                    </p>
+                </div>
+            </div>
+        </center>
+    </div>
+</div>
