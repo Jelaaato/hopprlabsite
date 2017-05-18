@@ -22,19 +22,6 @@ body {
     padding-top: 50px;
 }
 
-/* Set padding to keep content from hitting the edges */
-/*.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}*/
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
 .navbar-default {
     background-color:white;
 }
@@ -196,8 +183,6 @@ textarea {
     font-size:15px;
     color: black;
     text-align:left;
-    /*margin-left:100px;
-    margin-right:100px;*/
 }
 
 .exploreBtn {
@@ -224,6 +209,28 @@ textarea {
 
 .paddingPerTitle{
     padding-top:0px;
+}
+
+.box {
+    height:200px;
+    line-height:100px;
+    border:none;
+    text-align:center;
+    font-size:15px;
+    margin:5px;
+}
+
+.sliderWrapper {
+    padding-top:12vh;
+    padding-left:150px;
+    padding-right:150px;
+}
+
+.sliderText {
+    font-family:lato;
+    font-size: 16px;
+    text-transform:uppercase;
+    font-weight:500;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -259,8 +266,6 @@ textarea {
     font-size:14px;
     color: black;
     text-align:left;
-    /*margin-left:40px;
-    margin-right:40px;*/
 }
 
 .paddingPerRow {
@@ -270,6 +275,21 @@ textarea {
 .paddingPerTitle {
     padding-top: 80px;
 }
+
+.sliderWrapper {
+    padding-top:12vh;
+    padding-left:80px;
+    padding-right:80px;
+}
+
+.sliderText {
+    font-family:lato;
+    font-size: 14px;
+    text-transform:uppercase;
+    font-weight:500;
+}
+
+
 }
 
 @media (max-width: 767px) {
@@ -309,8 +329,6 @@ textarea {
     font-size:12px;
     color: black;
     text-align:justify;
-    /*margin-left:10px;
-    margin-right:10px;*/
 }
 .paddingPerRow { 
     padding-top:0px;
@@ -327,6 +345,20 @@ textarea {
     font-weight:500;
     letter-spacing:1px;
 }
+
+.sliderWrapper {
+    padding-top:12vh;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.sliderText {
+    font-family:lato;
+    font-size: 12px;
+    text-transform:uppercase;
+    font-weight:500;
+}
+
 }
 
 

@@ -18,50 +18,51 @@
     <script src="~/Scripts/bootstrap/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" onclick="openSidebar()">
-                    <span class="fa fa-bars" style="color:#1B996E;font-size:20px;"></span>
-                </button>
-                @Html.ActionLink("hopprLab", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+@*navbar & sidebar*@
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" onclick="openSidebar()">
+                <span class="fa fa-bars" style="color:#1B996E;font-size:20px;"></span>
+            </button>
+            @Html.ActionLink("hopprLab", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right" style="cursor:pointer;">
+                <li><a>Web</a></li>
+                <li><a>Mobile</a></li>
+                <li><a>Analytics</a></li>
+                <li><a>IoT</a></li>
+                <li style="padding-left:40px;"><a>Developers</a></li>
+            </ul>
+        </div>
+        <div id="sidebar" class="sidebar hidden-lg hidden-md">
+            <span class="closeBtn" onclick="closeSidebar()" style="cursor:pointer;">&times;</span>
+            <div class="sidebarTextWrapper">
+                    <ul class="removeListStyle">
+                        <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">Web</span></a></li>
+                        <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">Mobile</span></a></li>
+                        <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">Analytics</span></a></li>
+                        <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">IoT</span></a></li>
+                    </ul>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right" style="cursor:pointer;">
-                    <li><a>Web</a></li>
-                    <li><a>Mobile</a></li>
-                    <li><a>Analytics</a></li>
-                    <li><a>IoT</a></li>
-                    <li style="padding-left:40px;"><a>Developers</a></li>
-                </ul>
-            </div>
-            <div id="sidebar" class="sidebar hidden-lg hidden-md">
-                <span class="closeBtn" onclick="closeSidebar()" style="cursor:pointer;">&times;</span>
-                <div class="sidebarTextWrapper">
-                    @*<center>*@
-                        <ul class="removeListStyle">
-                            <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">Web</span></a></li>
-                            <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">Mobile</span></a></li>
-                            <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">Analytics</span></a></li>
-                            <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">IoT</span></a></li>
-                        </ul>
-                    @*</center>*@
-                </div>
-                <div class="sidebarFooterTextWrapper">
-                    <center>
-                        <ul class="removeListStyle">
-                            <li class="sidebarFooterTextPadding"><a href="@Url.Action("","")"><span class="sidebarFooterText">Developers</span></a></li>
-                            <li class="sidebarFooterTextPadding"><a href="@Url.Action("","")"><span class="sidebarFooterText">hopprTeam</span></a></li>
-                        </ul>
-                    </center>
-                </div>
+            <div class="sidebarFooterTextWrapper">
+                <center>
+                    <ul class="removeListStyle">
+                        <li class="sidebarFooterTextPadding"><a href="@Url.Action("","")"><span class="sidebarFooterText">Developers</span></a></li>
+                        <li class="sidebarFooterTextPadding"><a href="@Url.Action("","")"><span class="sidebarFooterText">hopprTeam</span></a></li>
+                    </ul>
+                </center>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container-fluid">
-        @RenderBody()
-    </div>
+@*Body*@
+<div class="container-fluid">
+    @RenderBody()
+</div>
 
   
    
@@ -78,4 +79,41 @@
         document.getElementById("sidebar").style.width = "0";
     }
 
+    $(document).ready(function () {
+        var slickSettings = {
+            slidesToShow: 4,
+            infinite: true,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            dots: true,
+            arrows: false,
+            responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            ]};
+
+        $('#slider').slick(slickSettings);
+    });
 </script>
