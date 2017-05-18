@@ -168,6 +168,7 @@
     <Content Include="fonts\CustomFonts\Open-Sans-regular.ttf" />
     <None Include="Properties\PublishProfiles\hopprLabv2.pubxml" />
     <None Include="Scripts\jQuery\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap\bootstrap.js" />
     <Content Include="Scripts\bootstrap\bootstrap.min.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
@@ -904,6 +905,7 @@
     <Content Include="Scripts\jQuery\jquery-3.1.1.slim.js" />
     <Content Include="Scripts\jQuery\jquery-3.1.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\scrollreveal.min.js" />
     <Content Include="Scripts\slick\slick.js" />
     <Content Include="Scripts\slick\slick.min.js" />
     <Content Include="Scripts\typeeffect.js" />
