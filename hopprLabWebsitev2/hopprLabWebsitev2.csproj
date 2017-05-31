@@ -87,6 +87,7 @@
     <Content Include="Content\bootstrap\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Images\headertry.jpeg" />
     <Content Include="Content\Images\creativity.jpg" />
     <Content Include="Content\Images\creativity2.jpg" />
     <Content Include="Content\Images\headerbg-blur.jpg" />
@@ -99,6 +100,7 @@
     <Content Include="Content\Images\innovation.jpg" />
     <Content Include="Content\Images\peoplebehind.jpg" />
     <Content Include="Content\Images\peoplebehind2.jpg" />
+    <Content Include="Content\Images\headertry2.jpeg" />
     <Content Include="Content\Images\technology.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\slick\slick-theme.css" />
@@ -166,6 +168,9 @@
     <Content Include="fonts\CustomFonts\Lato-Regular.ttf" />
     <Content Include="fonts\CustomFonts\Merriweather-Regular.ttf" />
     <Content Include="fonts\CustomFonts\Open-Sans-regular.ttf" />
+    <Content Include="Content\For_Wes.mp4" />
+    <Content Include="Content\Scroll-It.mp4" />
+    <Content Include="Content\Hey-World.mp4" />
     <None Include="Properties\PublishProfiles\hopprLabv2.pubxml" />
     <None Include="Scripts\jQuery\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\app.js" />
@@ -923,6 +928,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SectionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -931,6 +937,10 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Views\Sections\Web.cshtml" />
+    <Content Include="Views\Sections\Mobile.cshtml" />
+    <Content Include="Views\Sections\Analytics.cshtml" />
+    <Content Include="Views\Sections\IoT.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

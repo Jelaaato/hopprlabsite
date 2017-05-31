@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
     <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/animate.css" rel="stylesheet" />
+    @*<link href="~/Content/animate.css" rel="stylesheet" />*@
     <link href="~/Content/font-awesome.css" rel="stylesheet" />
     <link href="~/Content/slick/slick.css" rel="stylesheet" />
     <link href="~/Content/slick/slick-theme.css" rel="stylesheet" />
@@ -31,10 +31,10 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right" style="cursor:pointer;">
-                <li><a>Web</a></li>
-                <li><a>Mobile</a></li>
-                <li><a>Analytics</a></li>
-                <li><a>IoT</a></li>
+                <li><a href="@Url.Action("Web","Sections")">Web</a></li>
+                <li><a href="@Url.Action("Mobile","Sections")">Mobile</a></li>
+                <li><a href="@Url.Action("Analytics","Sections")">Analytics</a></li>
+                <li><a href="@Url.Action("IoT","Sections")">IoT</a></li>
                 <li style="padding-left:40px;"><a>Developers</a></li>
             </ul>
         </div>
@@ -42,10 +42,10 @@
             <span class="closeBtn" onclick="closeSidebar()" style="cursor:pointer;">&times;</span>
             <div class="sidebarTextWrapper">
                     <ul class="removeListStyle">
-                        <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">Web</span></a></li>
-                        <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">Mobile</span></a></li>
-                        <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">Analytics</span></a></li>
-                        <li class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarText">IoT</span></a></li>
+                        <li class="sidebarTextPadding"><a href="@Url.Action("Web","Sections")"><span class="sidebarText">Web</span></a></li>
+                        <li class="sidebarTextPadding"><a href="@Url.Action("Mobile","Sections")"><span class="sidebarText">Mobile</span></a></li>
+                        <li class="sidebarTextPadding"><a href="@Url.Action("Analytics","Sections")"><span class="sidebarText">Analytics</span></a></li>
+                        <li class="sidebarTextPadding"><a href="@Url.Action("IoT","Sections")"><span class="sidebarText">IoT</span></a></li>
                     </ul>
             </div>
             <div class="sidebarFooterTextWrapper">
@@ -63,7 +63,19 @@
 @*Body*@
 <div class="container-fluid">
     @RenderBody()
+
+    <div class="row noGutter">
+        <div class="col-lg-12">
+            <div class="footerWrapper">
+                <div style="text-align:center;line-height:8vh;">
+                    <i class="fa fa-copyright"></i>&nbsp;<span class="footerContent">hopprLab 2017 | info@hopprlab.com | <i class="fa fa-facebook-square"></i>&nbsp;<i class="fa fa-twitter-square"></i>&nbsp;<i class="fa fa-instagram"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+@*Footer Section*@
   
 </body>
 </html>
