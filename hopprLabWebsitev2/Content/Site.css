@@ -18,6 +18,15 @@
     src: url("../fonts/CustomFonts/Open-Sans-regular.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: museo-sans;
+    src: url("../fonts/CustomFonts/MuseoSans_500.otf") format('truetype');
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
 body {
     padding-top: 50px;
 }
@@ -30,6 +39,15 @@ body {
     font-family:abeat;
     letter-spacing: 1px;
     font-weight:600;
+}
+
+.description-container {
+    height:100%;
+    width:100%;
+    background-image: url(../Content/Images/descriptionbg.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
 }
 
 .sidebar {
@@ -51,7 +69,7 @@ body {
 }
 
 .sidebarTextPadding {
-    padding-bottom:14px;
+    padding-bottom:15px;
     text-align:center;
 }
 
@@ -171,7 +189,7 @@ body {
 }
 
 .title {
-    font-family:lato;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:35px;
     text-align:justify;
     font-weight:300;
@@ -179,9 +197,9 @@ body {
 }
 
 .description {
-    font-family:merriweather;
+    font-family:open-sans;
     font-size:15px;
-    color: black;
+    color: white;
     text-align:left;
 }
 
@@ -195,7 +213,7 @@ body {
     font-family: lato;
     font-size: 16px;
     font-weight: 400;
-    line-height: 33px;
+    line-height: 30px;
     color: #fff;
     -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;
     text-shadow: none;
@@ -243,7 +261,7 @@ body {
 .webContainer {
     height:80vh;
     width:100%;
-    background-image:url(../Content/Images/headerbg.jpg);
+    background-image:url(../Content/Images/web_banner.jpg);
     background-size:cover;
     /*background-attachment:fixed;*/
     background-position:center center;
@@ -253,7 +271,7 @@ body {
 .mobileContainer {
     height:80vh;
     width:100%;
-    background-image:url(../Content/Images/headerbg.jpg);
+    background-image:url(../Content/Images/mobile_banner.jpg);
     background-size:cover;
     /*background-attachment:fixed;*/
     background-position:center center;
@@ -263,7 +281,7 @@ body {
 .analyticsContainer {
     height:80vh;
     width:100%;
-    background-image:url(../Content/Images/headerbg.jpg);
+    background-image:url(../Content/Images/analytics_banner.jpg);
     background-size:cover;
     /*background-attachment:fixed;*/
     background-position:center center;
@@ -273,7 +291,7 @@ body {
 .iotContainer {
     height:80vh;
     width:100%;
-    background-image:url(../Content/Images/headerbg.jpg);
+    background-image:url(../Content/Images/iot_banner.jpg);
     background-size:cover;
     /*background-attachment:fixed;*/
     background-position:center center;
@@ -411,7 +429,7 @@ body {
 }
 
 .title {
-    font-family:lato;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:30px;
     text-align:justify;
     font-weight:300;
@@ -419,9 +437,9 @@ body {
 }
 
 .description {
-    font-family:merriweather;
+    font-family:open-sans;
     font-size:14px;
-    color: black;
+    color: white;
     text-align:left;
 }
 
@@ -457,6 +475,34 @@ body {
     padding-bottom:30px;
 }
 
+.wrapper-overlay {
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index:1;
+    transition:0.4s;
+    top:180px;
+    background: rgba(34, 34, 34, 0.8);
+    padding: 15px 20px;
+}
+
+.wrapper-overlay-text {
+    font-size: 20px;
+    color:white;
+    font-family:lato;
+    text-align:center;
+    text-transform: uppercase;
+    font-weight:500;
+    letter-spacing:1px;
+}
+
+.wrapper-overlay-description {
+    font-size: 16px;
+    color:white;
+    font-family:lato;
+    text-align:center;
+}
+
 }
 
 @media (max-width: 767px) {
@@ -484,7 +530,7 @@ body {
 }
 
 .title {
-    font-family:lato;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:25px;
     text-align:justify;
     font-weight:300;
@@ -492,9 +538,9 @@ body {
 
 }
 .description {
-    font-family:merriweather;
+    font-family:open-sans;
     font-size:12px;
-    color: black;
+    color: white;
     text-align:justify;
 }
 .paddingPerRow { 
@@ -535,6 +581,34 @@ body {
 
 .paddingBottom {
     padding-bottom:25px;
+}
+
+.wrapper-overlay {
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index:1;
+    transition:0.4s;
+    top:170px;
+    background: rgba(34, 34, 34, 0.8);
+    padding: 10px 15px;
+}
+
+.wrapper-overlay-text {
+    font-size: 18px;
+    color:white;
+    font-family:lato;
+    text-align:center;
+    text-transform: uppercase;
+    font-weight:500;
+    letter-spacing:1px;
+}
+
+.wrapper-overlay-description {
+    font-size: 14px;
+    color:white;
+    font-family:lato;
+    text-align:center;
 }
 }
 

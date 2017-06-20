@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
     <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    @*<link href="~/Content/animate.css" rel="stylesheet" />*@
     <link href="~/Content/font-awesome.css" rel="stylesheet" />
     <link href="~/Content/slick/slick.css" rel="stylesheet" />
     <link href="~/Content/slick/slick-theme.css" rel="stylesheet" />
@@ -35,25 +34,28 @@
                 <li><a href="@Url.Action("Mobile","Sections")">Mobile</a></li>
                 <li><a href="@Url.Action("Analytics","Sections")">Analytics</a></li>
                 <li><a href="@Url.Action("IoT","Sections")">IoT</a></li>
-                <li style="padding-left:40px;"><a>Developers</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Developers</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://hopprlab.com/openapi">Open API</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div id="sidebar" class="sidebar hidden-lg hidden-md">
             <span class="closeBtn" onclick="closeSidebar()" style="cursor:pointer;">&times;</span>
+            <span class="closeBtn" onclick="closeSidebar()" style="cursor:pointer;">&times;</span>
             <div class="sidebarTextWrapper">
-                    <ul class="removeListStyle">
-                        <li class="sidebarTextPadding"><a href="@Url.Action("Web","Sections")"><span class="sidebarText">Web</span></a></li>
-                        <li class="sidebarTextPadding"><a href="@Url.Action("Mobile","Sections")"><span class="sidebarText">Mobile</span></a></li>
-                        <li class="sidebarTextPadding"><a href="@Url.Action("Analytics","Sections")"><span class="sidebarText">Analytics</span></a></li>
-                        <li class="sidebarTextPadding"><a href="@Url.Action("IoT","Sections")"><span class="sidebarText">IoT</span></a></li>
-                    </ul>
+                <center>
+                    <div class="sidebarTextPadding"><a href="@Url.Action("Web","Sections")"><span class="sidebarText">Web</span></a></div>
+                    <div class="sidebarTextPadding"><a href="@Url.Action("Mobile","Sections")"><span class="sidebarText">Mobile</span></a></div>
+                    <div class="sidebarTextPadding"><a href="@Url.Action("Analytics","Sections")"><span class="sidebarText">Analytics</span></a></div>
+                    <div class="sidebarTextPadding"><a href="@Url.Action("IoT","Sections")"><span class="sidebarText">IoT</span></a></div>
+                </center>
             </div>
             <div class="sidebarFooterTextWrapper">
                 <center>
-                    <ul class="removeListStyle">
-                        <li class="sidebarFooterTextPadding"><a href="@Url.Action("","")"><span class="sidebarFooterText">Developers</span></a></li>
-                        <li class="sidebarFooterTextPadding"><a href="@Url.Action("","")"><span class="sidebarFooterText">hopprTeam</span></a></li>
-                    </ul>
+                    <div class="sidebarTextPadding"><a href="@Url.Action("","")"><span class="sidebarFooterText">Developers</span></a></div>
                 </center>
             </div>
         </div>

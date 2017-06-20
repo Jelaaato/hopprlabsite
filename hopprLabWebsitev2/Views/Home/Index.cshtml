@@ -40,35 +40,38 @@
 <div class="headerBodyPadding"></div>
 
 @*Body section (Web, Mobile, Analytic, IoT)*@
-<div class="row" style="background-color:#6DC590;">
+<div class="row">
+    <div class="description-container">
         <div class="headerBodyPadding"></div>
         <div class="container">
             <center>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 web">
                         <div style="text-align:left;">
-                            <img src="~/Content/Images/icons/web_icon.png" height="100" width="80" />
-                            <span class="title">Web</span>
+                            <img src="~/Content/Images/icons/web_icon_new.png" height="90" width="90" />
+                            <span class="title" style="color:white;">Web</span>
                         </div>
+                        <br>
                         <p class="description">
                             Offers wide range of timely applications deployed and maintained in the cloud that are accessible with your browser anywhere from desktop to mobile screens.
                         </p>
                         <br />
                         <div style="text-align:left;">
-                            <button class="exploreBtn">Explore</button>
+                            <a class="btn exploreBtn" href="@Url.Action("Web", "Sections")">Explore</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 paddingPerTitle mobile">
                         <div style="text-align:left;">
-                            <img src="~/Content/Images/icons/mobile_icon.png" height="100" width="80" />
-                            <span class="title">Mobile</span>
+                            <img src="~/Content/Images/icons/mobile_icon_new.png" height="90" width="70" />
+                            <span class="title" style="color:white;">Mobile</span>
                         </div>
+                        <br />
                         <p class="description">
                             Engage customers with simpler and more efficient applications that will provide similar services to those accessed on the web while taking advantage of the unique features a mobile device can offer.
                         </p>
                         <br />
                         <div style="text-align:left;">
-                            <button class="exploreBtn">Explore</button>
+                            <a class="btn exploreBtn" href="@Url.Action("Mobile", "Sections")">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -76,34 +79,37 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 paddingPerTitle analytics">
                         <div style="text-align:left;">
-                            <img src="~/Content/Images/icons/analytics_icon.png" height="100" width="80" />
-                            <span class="title">Analytics</span>
+                            <img src="~/Content/Images/icons/analytics_icon_new.png" height="90" width="90" />
+                            <span class="title" style="color:white;">Analytics</span>
                         </div>
+                        <br />
                         <p class="description">
                             Organize, visualize and analyze data to meet dashboards, reports and share insights that will measure your organization's performance.
                         </p>
                         <br />
                         <div style="text-align:left;">
-                            <button class="exploreBtn">Explore</button>
+                            <a class="btn exploreBtn" href="@Url.Action("Analytics","Sections")">Explore</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 paddingPerTitle iot">
                         <div style="text-align:left;">
-                            <img src="~/Content/Images/icons/iot_icon.png" height="100" width="80" />
-                            <span class="title">IoT</span>
+                            <img src="~/Content/Images/icons/iot_icon_new.png" height="90" width="90" />
+                            <span class="title" style="color:white;">IoT</span>
                         </div>
+                        <br />
                         <p class="description">
                             System of physical things embedded with sensors, software, electronics and connectivity to allow better performance by exchanging data between interconnected devices.
                         </p>
                         <br />
                         <div style="text-align:left;">
-                            <button class="exploreBtn">Explore</button>
+                            <a class="btn exploreBtn" href="@Url.Action("IoT", "Sections")">Explore</a>
                         </div>
                     </div>
                 </div>
             </center>
         </div>
         <div class="headerBodyPadding"></div>
+    </div>
 </div>
         
 @*People behind section*@

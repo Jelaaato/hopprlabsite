@@ -51,12 +51,12 @@ $(document).ready(function () {
 
 //scroll reveal
 window.sr = ScrollReveal();
-sr.reveal('.web', { duration: 500, delay: 650 });
-sr.reveal('.mobile', { duration: 500, delay: 650 });
-sr.reveal('.analytics', { duration: 500, delay: 850 });
-sr.reveal('.iot', { duration: 500, delay: 850 });
-sr.reveal('.ttle', { duration: 500, delay: 350 });
-sr.reveal('.descri', { duration: 500, delay: 550 });
+sr.reveal('.web', { duration: 1500, delay: 650, origin: 'bottom', distance: '100px'});
+sr.reveal('.mobile', { duration: 1500, delay: 650, origin: 'bottom', distance: '100px' });
+sr.reveal('.analytics', { duration: 1500, delay: 650, origin: 'bottom', distance: '100px' });
+sr.reveal('.iot', { duration: 1500, delay: 650, origin: 'bottom', distance: '100px' });
+sr.reveal('.ttle', { duration: 1000, delay: 350, origin: 'bottom', distance: '20px' });
+sr.reveal('.descri', { duration: 1000, delay: 350, origin: 'bottom', distance: '20px' });
 
 $(document).ready(function () {
 
