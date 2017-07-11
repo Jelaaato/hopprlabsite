@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
     <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/font-awesome.css" rel="stylesheet" />
     <link href="~/Content/slick/slick.css" rel="stylesheet" />
@@ -34,12 +35,13 @@
                 <li><a href="@Url.Action("Mobile","Sections")">Mobile</a></li>
                 <li><a href="@Url.Action("Analytics","Sections")">Analytics</a></li>
                 <li><a href="@Url.Action("IoT","Sections")">IoT</a></li>
-                <li class="dropdown">
+                <li style="padding-left:40px;"><a href="@Url.Action("","")">Developers</a></li>
+                @*<li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Developers</a>
                     <ul class="dropdown-menu">
                         <li><a href="https://hopprlab.com/openapi">Open API</a></li>
                     </ul>
-                </li>
+                </li>*@
             </ul>
         </div>
         <div id="sidebar" class="sidebar hidden-lg hidden-md">

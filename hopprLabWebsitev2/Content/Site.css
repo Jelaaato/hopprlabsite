@@ -181,7 +181,7 @@ body {
 }
 
 .headerBodyPadding {
-    padding-top:150px;
+    padding-top:80px;
 }
 
 .fontAbeat {
@@ -200,7 +200,7 @@ body {
     font-family:open-sans;
     font-size:15px;
     color: white;
-    text-align:left;
+    text-align:justify;
 }
 
 .exploreBtn {

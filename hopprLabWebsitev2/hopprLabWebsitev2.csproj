@@ -39,23 +39,57 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Web.Services" />
-    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -75,6 +109,7 @@
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Mvc">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
@@ -89,6 +124,13 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\analytics_banner.jpg" />
+    <Content Include="Content\Images\developers\cess.png" />
+    <Content Include="Content\Images\developers\dia.png" />
+    <Content Include="Content\Images\developers\jel.png" />
+    <Content Include="Content\Images\developers\nino.png" />
+    <Content Include="Content\Images\developers\rap.png" />
+    <Content Include="Content\Images\developers\sir.png" />
+    <Content Include="Content\Images\developers\stven.png" />
     <Content Include="Content\Images\headerbg.jpg" />
     <Content Include="Content\Images\icons\analytics_icon_new.png" />
     <Content Include="Content\Images\descriptionbg.jpg" />
@@ -103,9 +145,12 @@
     <Content Include="Content\Images\icons\web_icon.png" />
     <Content Include="Content\Images\iot_banner.jpg" />
     <Content Include="Content\Images\mobile_banner.jpg" />
+    <Content Include="Content\Images\newheader.jpg" />
     <Content Include="Content\Images\our_work\comingsoon.jpg" />
     <Content Include="Content\Images\our_work\eventmanager.jpg" />
     <Content Include="Content\Images\our_work\iot.jpg" />
+    <Content Include="Content\Images\our_work\eventmanagermobile.jpg" />
+    <Content Include="Content\Images\our_work\ahmcapp.jpg" />
     <Content Include="Content\Images\our_work\portal.jpg" />
     <Content Include="Content\Images\our_work\powerbi.jpg" />
     <Content Include="Content\Images\peoplebehind.jpg" />
@@ -119,6 +164,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="favicon.ico" />
     <Content Include="Scripts\angularjs\angular-animate.js" />
     <Content Include="Scripts\angularjs\angular-animate.min.js" />
     <Content Include="Scripts\angularjs\angular-aria.js" />
@@ -177,6 +223,7 @@
     <Content Include="fonts\CustomFonts\Merriweather-Regular.ttf" />
     <Content Include="fonts\CustomFonts\Open-Sans-regular.ttf" />
     <Content Include="fonts\CustomFonts\MuseoSans_500.otf" />
+    <None Include="Properties\PublishProfiles\hopprLab.pubxml" />
     <None Include="Properties\PublishProfiles\hopprLabv2.pubxml" />
     <None Include="Scripts\jQuery\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\app.js" />
